@@ -2,10 +2,12 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 
-import LoginCustomer from './components/LoginCustomer';
-import LoginManager from './components/LoginManager';
+import LoginCustomer from './components/Customer/LoginCustomer';
+import LoginManager from './components/Manager/LoginManager';
 import CustomerQueue from './components/Customer/CustomerQueue';
 import ManagerQueue from './components/Manager/ManagerQueue';
+import ManagerChangeOrder from './components/Manager/ManagerChangeOrder';
+import ManagerCode from './components/Manager/ManagerCode';
 
 
 import {
@@ -20,6 +22,8 @@ const RootStack = createStackNavigator({
 
   CustomerQueue: CustomerQueue,
   ManagerQueue: ManagerQueue,
+  ManagerChangeOrder: ManagerChangeOrder,
+  ManagerCode: ManagerCode,
 });
 
 export default class App extends React.Component {
