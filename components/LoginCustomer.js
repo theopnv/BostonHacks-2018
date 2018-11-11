@@ -40,7 +40,7 @@ export default class LoginManager extends React.Component {
   }
 
   submit() {    
-    this.props.navigation.navigate('SongQueue');
+    this.props.navigation.navigate('CustomerQueue');
   }
   
 

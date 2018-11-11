@@ -4,7 +4,8 @@ import { AppLoading, Asset, Font, Icon } from 'expo';
 
 import LoginCustomer from './components/LoginCustomer';
 import LoginManager from './components/LoginManager';
-import SongQueue from './components/Customer/SongQueue';
+import CustomerQueue from './components/Customer/CustomerQueue';
+import ManagerQueue from './components/Manager/ManagerQueue';
 
 
 import {
@@ -17,7 +18,8 @@ const RootStack = createStackNavigator({
   LoginCustomer: LoginCustomer,
   LoginManager: LoginManager,
 
-  SongQueue: SongQueue,
+  CustomerQueue: CustomerQueue,
+  ManagerQueue: ManagerQueue,
 });
 
 export default class App extends React.Component {

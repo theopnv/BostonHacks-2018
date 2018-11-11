@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 import { Text, TextInput, StyleSheet, Button, View, ScrollView  } from 'react-native';
 
-var songList = require("./spotify_boston_tracks.json");
-
-export default class SongQueue extends React.Component {
+export default class Queue extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      songs: songList
+      tracks: props.tracks
     };
 
   }
 
   render() {
     return (
-      <View style={styles.container}>
         <ScrollView>
           {
-            songList.tracks.map((item, index) => (
+            this.state.tracks.map((item, index) => (
               <View key={index} style={styles.item}>
                 <Text>{item.name}</Text>
               </View>
             ))
           }
         </ScrollView>
-      </View>
     );
   }
 
@@ -32,10 +28,6 @@ export default class SongQueue extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },   
   item: {
     flexDirection: 'row',
     justifyContent: 'space-between',

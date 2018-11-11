@@ -38,6 +38,7 @@ export default class LoginManager extends React.Component {
   }
 
   submit() {
+    this.props.navigation.navigate('ManagerQueue');
   }
 
 }
