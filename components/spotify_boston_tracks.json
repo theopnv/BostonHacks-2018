@@ -11,7 +11,8 @@
       "artists": "Sheck Wes",
       "duration_ms": 251319,
       "name": "Mo Bamba",
-      "popularity": 50
+      "upVotes": "0",
+      "downVotes": "0"
     },
     {
       "album": {
@@ -24,7 +25,8 @@
       "artists": "Lil Baby",
       "duration_ms": 251319,
       "name": "Never Recover",
-      "popularity": 50
+      "upVotes": 0,
+      "downVotes": 0
     },
     {
       "album": {
@@ -37,7 +39,8 @@
       "artists": "Offset",
       "duration_ms": 251319,
       "name": "Taste",
-      "popularity": 50
+      "upVotes": 0,
+      "downVotes": 0
     },
     {
       "album": {
@@ -50,7 +53,8 @@
       "artists": "Offset, Travis Scott",
       "duration_ms": 251319,
       "name": "ZEZE",
-      "popularity": 50
+      "upVotes": 0,
+      "downVotes": 0
     },
     {
       "album": {
@@ -63,7 +67,8 @@
       "artists": "Cardy B",
       "duration_ms": 251319,
       "name": "Money",
-      "popularity": 50
+      "upVotes": 0,
+      "downVotes": 0
     },
     {
       "album": {
@@ -76,7 +81,36 @@
       "artists": "2 Chainz, Big Sean, Nicki Minaj",
       "duration_ms": 251319,
       "name": "DrIP DrIp Drip",
-      "popularity": 50
+      "upVotes": 0,
+      "downVotes": 0
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/mobamba.png",
+        "name": "Mo Bamba",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Sheck Wes",
+      "duration_ms": 251319,
+      "name": "Mo Bamba",
+      "upVotes": "0",
+      "downVotes": "0"
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/mobamba.png",
+        "name": "Mo Bamba",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Sheck Wes",
+      "duration_ms": 251319,
+      "name": "Mo Bamba",
+      "upVotes": "0",
+      "downVotes": "0"
     }
   ]
 }

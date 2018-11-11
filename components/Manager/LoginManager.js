@@ -27,7 +27,7 @@ export default class LoginManager extends React.Component {
             placeholder="Password"
           />
           <Button
-            style={styles.input}
+            style={styles.submit}
             onPress={this.submit}
             title="Submit"
             color="#841584"
@@ -49,9 +49,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   input: {
+    top: 30,
     width: 250,
-    margin: 50
+    marginBottom: 50
   },
+  submit: {
+  }
 
 })
   

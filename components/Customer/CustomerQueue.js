@@ -16,7 +16,7 @@ export default class CustomerQueue extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Queue tracks={this.state.tracks} />
+        <Queue tracks={this.state.tracks} editable={true} />
       </View>
     );
   }

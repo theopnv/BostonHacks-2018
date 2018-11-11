@@ -21,15 +21,14 @@ export default class LoginManager extends React.Component {
           />
           
           <Button
-            style={styles.input}
+            style={styles.submit}
             onPress={this.submit}
             title="Submit"
-            color="#841584"
+            color='#2f95dc'
           />
 
-          
           <Button
-            style={styles.input}
+            style={styles.managerLogin}
             onPress={() => this.props.navigation.push('LoginManager')}
             title="Login as a manager"
             color="#841584"
@@ -53,8 +52,14 @@ const styles = StyleSheet.create({
   },
   input: {
     width: 250,
-    margin: 50
+    margin: 50,
   },
+  submit: {
+    margin: 50,
+  },
+  managerLogin: {
+    margin: 50,
+  }
 
 })
   
