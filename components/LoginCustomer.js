@@ -39,8 +39,8 @@ export default class LoginManager extends React.Component {
     );
   }
 
-  submit() {
-    console.log(this.state.email);
+  submit() {    
+    this.props.navigation.navigate('SongQueue');
   }
   
 

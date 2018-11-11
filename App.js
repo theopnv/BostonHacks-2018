@@ -1,16 +1,23 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
+
 import LoginCustomer from './components/LoginCustomer';
 import LoginManager from './components/LoginManager';
+import SongQueue from './components/Customer/SongQueue';
+
+
 import {
   createStackNavigator,
 } from 'react-navigation'
+
 // import AppNavigator from './navigation/AppNavigator';
 
 const RootStack = createStackNavigator({
   LoginCustomer: LoginCustomer,
-  LoginManager: LoginManager
+  LoginManager: LoginManager,
+
+  SongQueue: SongQueue,
 });
 
 export default class App extends React.Component {

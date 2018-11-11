@@ -7,7 +7,6 @@ export default class LoginManager extends React.Component {
     this.state = {
       email:"",
       password:"",
-      code:""
     };
     this.submit = this.submit.bind(this);
 
@@ -39,8 +38,6 @@ export default class LoginManager extends React.Component {
   }
 
   submit() {
-    console.log(this.state.email);
-    console.log(this.state.password);
   }
 
 }
