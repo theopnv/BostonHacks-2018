@@ -24,14 +24,14 @@ export default class LoginManager extends React.Component {
             style={styles.submit}
             onPress={this.submit}
             title="Submit"
-            color='#2f95dc'
+            color='#ff6f49'
           />
 
           <Button
             style={styles.managerLogin}
             onPress={() => this.props.navigation.push('LoginManager')}
             title="Login as a manager"
-            color="#841584"
+            color='#000'
           />
           
         </View>

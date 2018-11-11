@@ -51,7 +51,28 @@ export default class Song extends React.Component {
             </View>
           )
         :
-          ( <Text style={styles.text}>{item.name}</Text> )
+          ( <View>
+              { (this.state.index == 0 || this.state.index == 1) &&
+                <TouchableOpacity>
+                  <Text style={styles.nowPlaying}>
+                    { this.state.index }
+                    { this.state.index == 0 && ' -  Now Playing: ' }
+                    { this.state.index == 1 && ' - Playing next: '} {this.state.item.name}
+                  </Text>
+                </TouchableOpacity>
+              }
+                       
+              { (this.state.index != 0 && this.state.index != 1) &&
+                <TouchableOpacity 
+                  style={styles.voteButton}>
+                            
+                  <Text>
+                    {this.state.item.name} - {this.state.item.upVotes.toString()} votes
+                  </Text>
+                </TouchableOpacity>
+              }
+            </View>
+          )
         }
       </View>
     );

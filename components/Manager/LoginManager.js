@@ -30,7 +30,7 @@ export default class LoginManager extends React.Component {
             style={styles.submit}
             onPress={this.submit}
             title="Submit"
-            color="#841584"
+            color="#000"
           />
           
         </View>
