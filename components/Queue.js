@@ -13,9 +13,11 @@ export default class Queue extends React.Component {
   }
 
   updateList(item) {
-    newTracks = this.state.tracks.sort((a, b) => { 
-      return a.upVotes - b.upVotes; })
-    this.setState({tracks: newTracks});
+    newTracks = this.state.tracks.slice(2).sort((a, b) => { 
+      return b.upVotes - a.upVotes; })
+      
+    finalTracks = this.state.tracks.slice(0, 2).concat(newTracks);
+    this.setState({tracks: finalTracks});
   }
 
   render() {
@@ -23,15 +25,17 @@ export default class Queue extends React.Component {
         <FlatList
             style={styles.container}
             data={this.state.tracks}
-            keyExtractor={(item) => item.id.toString()}
+            extraData={this.state}
             renderItem={({item, index}) => <Song 
               item={item} 
               index={index}
               editable={this.state.editable}
               handler={this.updateList}/>}
+            keyExtractor={(item) => item.id.toString()}
           />
     );
   }
+
 
 
 }

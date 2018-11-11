@@ -15,7 +15,7 @@ export default class Song extends React.Component {
   }
 
   onVote(newItem) {
-    newItem.upVotes = newItem.upVotes + 1;
+    newItem.upVotes = parseInt(newItem.upVotes) + 1;
     this.setState({item: newItem});
 
     this.props.handler(newItem)
@@ -43,7 +43,7 @@ export default class Song extends React.Component {
                   onPress={(item) => this.onVote(this.state.item)}>
                             
                   <Text>
-                    {this.state.index} - {this.state.item.name} - {this.state.item.upVotes.toString()} votes
+                    {this.state.item.name} - {this.state.item.upVotes.toString()} votes
                   </Text>
                 </TouchableOpacity>
               }
