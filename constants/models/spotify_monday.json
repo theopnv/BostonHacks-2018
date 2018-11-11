@@ -1,0 +1,69 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "images": "/assets/images/monday/breakestra.png",
+        "name": "Hit The Floor",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Breakestra",
+      "duration_ms": 251319,
+      "name": "Hiding",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/monday/blackcrows.png",
+        "name": "Shake Your Money Maker",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "The Black Crows",
+      "duration_ms": 251319,
+      "name": "Hard to Handle",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/monday/core.png",
+        "name": "Core",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Stone Temple Pilot",
+      "duration_ms": 251319,
+      "name": "Plush",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/monday/themcrookedvultures.png",
+        "name": "Them Crooked Vultures",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Them Crooked Vultures",
+      "duration_ms": 251319,
+      "name": "Scumbag Blues",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/monday/orange.png",
+        "name": "Blues Explosion",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "The Jon Spencer Blues Explosion",
+      "duration_ms": 251319,
+      "name": "Bellbottoms",
+      "popularity": 50,
+    },
+  ]
+}

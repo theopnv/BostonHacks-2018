@@ -1,0 +1,82 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/mobamba.png",
+        "name": "Mo Bamba",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Sheck Wes",
+      "duration_ms": 251319,
+      "name": "Mo Bamba",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/dripharder.png",
+        "name": "Drip Harder",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Lil Baby",
+      "duration_ms": 251319,
+      "name": "Never Recover",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/taste.png",
+        "name": "Taste",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Offset",
+      "duration_ms": 251319,
+      "name": "Taste",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/ZEZE.png",
+        "name": "ZEZE",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Offset, Travis Scott",
+      "duration_ms": 251319,
+      "name": "ZEZE",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/Money.png",
+        "name": "Money",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "Cardy B",
+      "duration_ms": 251319,
+      "name": "Money",
+      "popularity": 50,
+    },
+    {
+      "album": {
+        "images": "/assets/images/get_turnt/lovemenow.png",
+        "name": "LoVE me NOw",
+        "release_date": "2015-09-18",
+        "type": "album",
+        "uri": "spotify:album:1DFixLWuPkv3KT3TnV35m3"
+      },
+      "artists": "2 Chainz, Big Sean, Nicki Minaj",
+      "duration_ms": 251319,
+      "name": "DrIP DrIp Drip",
+      "popularity": 50,
+    }
+  ]
+}
