@@ -1,13 +1,17 @@
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, TextInput, StyleSheet, Button, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
+import Login from './components/Login';
+// import AppNavigator from './navigation/AppNavigator';
 
 export default class App extends React.Component {
-  state = {
-    isLoadingComplete: false,
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoadingComplete: false,
+    }
+  }
+  
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
@@ -19,9 +23,10 @@ export default class App extends React.Component {
       );
     } else {
       return (
-        <View style={styles.container}>
-          {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-          <AppNavigator />
+        <View>
+          <Login />
+          {/* {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
+          <AppNavigator /> */}
         </View>
       );
     }
@@ -43,6 +48,7 @@ export default class App extends React.Component {
     ]);
   };
 
+
   _handleLoadingError = error => {
     // In this case, you might want to report the error to your error
     // reporting service, for example Sentry
@@ -58,5 +64,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
+  }
 });
