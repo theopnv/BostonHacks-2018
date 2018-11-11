@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TextInput, StyleSheet, Button, View } from 'react-native';
 
-export default class Login extends Component {
+export default class LoginManager extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,11 +10,12 @@ export default class Login extends Component {
       code:""
     };
     this.submit = this.submit.bind(this);
+
   }
 
   render() {
     return (
-      <View >
+      <View style={styles.container}>
           <TextInput
             style={styles.input}
             onChangeText={(text) => this.setState({email: text})}
