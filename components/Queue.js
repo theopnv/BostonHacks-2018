@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, TextInput, Image, StyleSheet, Button, TouchableOpacity, View, ScrollView  } from 'react-native';
+import { Text, TextInput, Image, StyleSheet, Button, TouchableOpacity, View, FlatList, ScrollView, List  } from 'react-native';
+import Song from './Song';
 
 export default class Queue extends React.Component {
   constructor(props) {
@@ -7,57 +8,28 @@ export default class Queue extends React.Component {
     this.state = {
       tracks: props.tracks,
       editable: props.editable,
-      uniqueValue: 0
     };
-
-    this.onVote = this.onVote.bind(this);
-
+    this.updateList = this.updateList.bind(this);
   }
 
-  onVote(item) {
-    
-    item.upVote++;
-    this.setState({uniqueValue: uniqueValue + 1});
+  updateList(item) {
+    newTracks = this.state.tracks.sort((a, b) => { 
+      return a.upVotes - b.upVotes; })
+    this.setState({tracks: newTracks});
   }
 
   render() {
     return (
-          <ScrollView style={styles.container}>
-            {
-              this.state.tracks.map((item, index) => (
-                <View key={index} style={styles.item}>
-                  { this.state.editable ?
-                    (
-                      <View>
-                        { index == 0 &&
-                          <TouchableOpacity 
-                            onPress={(item) => this.onVote(item)}>
-                            <Text style={styles.nowPlaying}>
-                              Now Playing: {item.name}
-                            </Text>
-                          </TouchableOpacity>
-                        }
-                        
-                        { index != 0 &&
-                          <TouchableOpacity 
-                            style={styles.voteButton}
-                            onPress={(item) => this.onVote(item)}>
-                            
-                            <Text>
-                              {item.name}
-                            </Text>
-                          </TouchableOpacity>
-                        }
-
-                      </View>
-                    )
-                  :
-                    ( <Text style={styles.text}>{item.name}</Text> )
-                  }
-                </View>
-              ))
-            }
-          </ScrollView>
+        <FlatList
+            style={styles.container}
+            data={this.state.tracks}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({item, index}) => <Song 
+              item={item} 
+              index={index}
+              editable={this.state.editable}
+              handler={this.updateList}/>}
+          />
     );
   }
 
